@@ -1,0 +1,190 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+}
+/* Header area */
+#mainContain{
+    width: 50%;
+    height: 80%;
+    background: #fff;
+    margin: 6% auto 0% auto;
+    border-radius: 22px;
+    padding: 3% 0px;
+}
+#pageTitle{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+#headerTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 5%;
+}
+#selectCity{
+    width: 50%;
+    height: 10%;
+    border-radius: 30px;
+    font-size: 11px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #F5F5F7;
+    border-right: 16px solid transparent;
+    box-shadow: 1px 1px 10px 5px rgba(211, 211, 211, 0.072);
+}
+/* Main time display */
+#middleLine{
+    width: 83%;
+    margin: 0px auto;
+    padding: 0px;
+    padding-bottom: 12px;
+}
+#mainTimeIcon {
+    width: 38%;
+    margin: 0px auto;
+    padding: 0px;
+}
+#locationIcon{
+    color: #E55095;
+    padding: 0px 10px;
+    font-size: 1em;
+}
+#mainTime{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+#locationAndDate{
+    font-size: 0.75em;
+    color: #ABABAB;
+    /* border: 1px solid red; */
+}
+/* city list */
+.cityListContainer{
+    margin-bottom: 3%;
+    padding-bottom: 5%;
+}
+.cityList{
+    width: 82%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    margin-bottom: 0px;
+    
+}
+.countryIcon {
+    font-size: 0.7em;
+}
+#cityName{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+#cityCurrentDate{
+    font-size: 0.75em;
+    color: #ABABAB;
+}
+#cityTime{
+    font-size: 2em;
+    color: #E55095;
+    font-weight: 600;
+}
+#cityTimeUnit{
+    font-size: 1em;
+    color: #E55095;
+    font-weight: 600;
+}
+/* footer */
+footer p{
+    font-size: 11px;
+    color: #ABABAB;
+    text-align: center;
+}
+footer p a{
+    text-decoration: none;
+    color: #E55095;
+    transition: all 400ms ease-in-out;
+}
+footer p a:hover{
+    text-decoration: underline;
+    color: #9a295e;
+}
+
+/* responsive */
+@media only screen and (max-width: 420px) {
+    #mainContain {
+        width: 100%;
+        height: 80%;
+        background:none;
+        margin: 3% auto 0% auto;
+        border-radius: 15px;
+    }
+    
+    #pageTitle {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
+    }
+    #headerTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #selectCity {
+        width: 70%;
+        height: 10%;
+        background-color: #ffffff;
+        border-right: 16px solid transparent;
+    }
+    /* Main time display */
+    #middleLine {
+        width: 93%;
+    }
+
+    #mainTimeIcon {
+        width: 55%;
+        margin: 0px auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+    #locationIcon {
+        font-size: 0.8em;
+    }
+    #mainTime {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    #locationAndDate {
+        font-size: 0.6em;
+        color: #ABABAB;
+    }
+    /* city list */
+    .cityList {
+        width: 90%;
+    }
+    .countryIcon {
+        font-size: 0.6em;
+    }
+    #cityName {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    #cityCurrentDate {
+        font-size: 0.6em;
+    }
+    #cityTime {
+        font-size: 1.5em;
+    }
+    #cityTimeUnit {
+        font-size: 0.7em;
+    }
+}
