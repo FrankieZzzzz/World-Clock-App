@@ -29,7 +29,7 @@ body{
     width: 50%;
     height: 10%;
     border-radius: 30px;
-    font-size: 11px;
+    font-size: 13px;
     padding: 8px 20px;
     border: none;
     background-color: #F5F5F7;
@@ -64,7 +64,7 @@ body{
     /* border: 1px solid red; */
 }
 /* city list */
-.cityListContainer{
+#cityListContainer{
     margin-bottom: 3%;
     padding-bottom: 5%;
 }

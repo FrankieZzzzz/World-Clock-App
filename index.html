@@ -29,11 +29,13 @@
             <h1 id="pageTitle">World Clock</h1>
             <select name="selectCity" id="selectCity">
               <option value="">Please select a city</option>
-              <option value="">Beijing 🇨🇳</option>
-              <option value="">London 🇬🇧</option>
-              <option value="">Tokyo 🇯🇵</option>
-              <option value="">Los Angles 🇺🇸</option>
-              <option value="">Toronto 🇨🇦</option>
+              <option value="Asia/Hong_Kong">Hongkong 🇭🇰</option>
+              <option value="Asia/Shanghai">Shanghai 🇨🇳</option>
+              <option value="Asia/Seoul">Seoul 🇰🇷</option>
+              <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+              <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
+              <option value="America/Toronto">Toronto 🇨🇦</option>
+              <option value="America/Vancouver">Vancouver 🇨🇦</option>
             </select>
           </div>
           <div id="mainTimeIcon">
@@ -43,7 +45,7 @@
             </div>
             <p id="locationAndDate">Toronto, Canada Sunday 7/3/2023</p>
           </div>
-          <main class="cityListContainer">
+          <main id="cityListContainer">
             <div class="cityList" id="city-London">
               <div class="cityList-left">
                 <p class="cityName">London <span class="countryIcon">🇬🇧</span></p>
@@ -55,7 +57,7 @@
             </div>
             <div class="cityList" id="city-Hongkong">
               <div class="cityList-left">
-                <p class="cityName">Hongkong <span class="countryIcon">🇨🇳</span></p>
+                <p class="cityName">Hongkong <span class="countryIcon">🇭🇰</span></p>
                 <p class="date"></p>
               </div>
               <div class="cityList-right">
