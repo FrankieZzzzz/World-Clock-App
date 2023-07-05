@@ -100,6 +100,20 @@ body{
     color: #E55095;
     font-weight: 600;
 }
+#clean{
+    width: 82%;
+    margin: 0px auto;
+}
+#cleanBtn{
+    color: #E55095;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+#cleanBtn:hover {
+    color: #232323;
+    text-decoration: underline;
+}
 /* footer */
 footer p{
     font-size: 11px;
@@ -114,7 +128,7 @@ footer p a{
 }
 footer p a:hover{
     text-decoration: underline;
-    color: #9a295e;
+    color: #232323;
 }
 /* responsive */
 @media only screen and (max-width: 1200px) {

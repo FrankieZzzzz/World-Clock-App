@@ -23,14 +23,11 @@ function _updateTime(){
     let currentDate = moment().tz(currentTimezone).format("dddd MMMM/DD/YYYY")
     let topTimeDisplay = document.getElementById("mainTime").innerHTML = moment().tz(currentTimezone).format("HH:mm:ss [<small>]A[</small>]")
     let topCityAndDateDisplay = document.getElementById("locationAndDate").innerHTML = `${currentTimezone}, ${currentDate}`;
-
-    
-
 }
 //refresh evey one sec
-setInterval(_updateTime, 1000)
+setInterval(_updateTime, 1000);
 
-// //top time display
+// List display
 let cityList = document.getElementById("selectCity").addEventListener("change",function _selectFunction(event){
     let selectCityName = event.target.value;
     if (selectCityName === "current-Location"){
@@ -39,16 +36,17 @@ let cityList = document.getElementById("selectCity").addEventListener("change",f
     let simplifyCityName = selectCityName.replace("_", " ").split("/")[1];
     let cityTimeZoneName = moment().tz(selectCityName);
     let selectTimeDisplay = document.getElementById("cityListContainer");
-    selectTimeDisplay.innerHTML += 
-    `<div class="cityList">
-        <div class="cityList-left">
-            <p class="cityName">${simplifyCityName}</p>
-            <p class="date">${cityTimeZoneName.format("dddd MMMM/DD/YYYY")}</p>
+        selectTimeDisplay.innerHTML += 
+        `<div class="cityList">
+            <div class="cityList-left">
+                <p class="cityName">${simplifyCityName}</p>
+                <p class="date">${cityTimeZoneName.format("dddd MMMM/DD/YYYY")}</p>
+            </div>
+                <div class="cityList-right">
+                <span class="time">${cityTimeZoneName.format("HH:mm:ss [<small>]A[</small>]")}</span>
+            </div>
         </div>
-            <div class="cityList-right">
-            <span class="time">${cityTimeZoneName.format("HH:mm:ss [<small>]A[</small>]")}</span>
-        </div>
-    </div>
-    `
+        `
+    let goBack = document.getElementById("cleanBtn").innerHTML = "Clean Cities"
 })
 
