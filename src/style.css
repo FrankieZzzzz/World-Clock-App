@@ -43,10 +43,12 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 5% 0px;
 }
 #timeList{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #locationIcon{
     color: #E55095;
@@ -54,14 +56,13 @@ body{
     font-size: 2em;
 }
 #mainTime{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 0px;
 }
 #locationAndDate{
     font-size: 0.75em;
     color: #ABABAB;
-    /* border: 1px solid red; */
 }
 /* city list */
 #cityListContainer{
@@ -70,14 +71,12 @@ body{
 }
 .cityList{
     width: 82%;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px auto;
     margin-bottom: 14px;
     border-bottom: 1px dashed #ABABAB;
-    
 }
 .countryIcon {
     font-size: 0.7em;
@@ -117,9 +116,115 @@ footer p a:hover{
     text-decoration: underline;
     color: #9a295e;
 }
-
 /* responsive */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 1200px) {
+    #pageTitle {
+        font-size: 1.6em;
+    }
+
+    #headerTop {
+        flex-direction: column;
+    }
+
+    #selectCity {
+        width: 65%;
+        height: 5%;
+        font-size: 11px;
+        margin-top: 5%;
+    }
+
+    /* Main time display */
+    #locationIcon {
+        font-size: 1.5em;
+    }
+
+    #mainTime {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    #locationAndDate {
+        font-size: 0.6em;
+    }
+
+    /* city list */
+    .cityList {
+        width: 82%;
+        margin-bottom: 14px;
+    }
+
+    .countryIcon {
+        font-size: 0.5em;
+    }
+
+    .cityName {
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+
+    .date {
+        font-size: 0.6em;
+    }
+
+    .time {
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    footer p {
+        font-size: 9px;
+        margin-top: 2%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #pageTitle {
+        font-size: 1em;
+    }
+    #headerTop {
+        flex-direction: column;
+    }
+    #selectCity {
+        width: 65%;
+        height: 5%;
+        font-size: 11px;
+        margin-top: 5%;
+    }
+    /* Main time display */
+    #locationIcon {
+        font-size: 1.5em;
+    }
+    #mainTime {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    #locationAndDate {
+        font-size: 0.45em;
+    }
+    /* city list */
+    .cityList {
+        width: 82%;
+        margin-bottom: 14px;
+    }
+    .countryIcon {
+        font-size: 0.5em;
+    }
+    .cityName {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .date {
+        font-size: 0.4em;
+    }
+    .time {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    footer p {
+        font-size: 9px;
+        margin-top: 2%;
+    }
+}
+@media only screen and (max-width: 480px) {
     body{
         width: 100%;
     }
@@ -130,7 +235,6 @@ footer p a:hover{
         margin: 3% auto 0% auto;
         border-radius: 15px;
     }
-    
     #pageTitle {
         font-size: 1.5em;
         text-align: center;
@@ -147,20 +251,14 @@ footer p a:hover{
         background-color: #ffffff;
         border-right: 16px solid transparent;
     }
-    /* Main time display */
-    /* #middleLine {
-        width: 93%;
-    } */
-
     #mainTimeIcon {
-        width: 55%;
+        width: 85%;
         margin: 0px auto;
         padding: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid red; */
     }
     #locationIcon {
         font-size: 1em;
@@ -170,7 +268,9 @@ footer p a:hover{
         font-weight: 600;
     }
     #locationAndDate {
-        font-size: 0.6em;
+        text-align: center;
+        width: 100%;
+        font-size: 0.5em;
         color: #ABABAB;
     }
     /* city list */
@@ -190,7 +290,34 @@ footer p a:hover{
     .time{
         font-size: 1.5em;
     }
-    .cityTimeUnit {
-        font-size: 0.7em;
+}
+@media only screen and (max-width: 308px) {
+    #pageTitle {
+        font-size: 1.2em;
+    }
+    #selectCity {
+        width: 70%;
+        height: 6%;
+    }
+    #locationIcon {
+        font-size: 0.9em;
+    }
+    #mainTime {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    /* city list */
+    .countryIcon {
+        font-size: 0.6em;
+    }
+    .cityName {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .date {
+        font-size: 0.5em;
+    }
+    .time {
+        font-size: 1.2em;
     }
 }

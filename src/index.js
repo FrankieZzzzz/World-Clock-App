@@ -1,10 +1,7 @@
 function _updateTime(){
     //London info
-    
     let londonElement = document.getElementById("city-London");
     if (londonElement){
-        
-  
     let londonDateElement = londonElement.querySelector(".date");
     let londonTimeElement = londonElement.querySelector(".time");
     let londonTimeInfo = moment().tz("Europe/London")
@@ -26,6 +23,9 @@ function _updateTime(){
     let currentDate = moment().tz(currentTimezone).format("dddd MMMM/DD/YYYY")
     let topTimeDisplay = document.getElementById("mainTime").innerHTML = moment().tz(currentTimezone).format("HH:mm:ss [<small>]A[</small>]")
     let topCityAndDateDisplay = document.getElementById("locationAndDate").innerHTML = `${currentTimezone}, ${currentDate}`;
+
+    
+
 }
 //refresh evey one sec
 setInterval(_updateTime, 1000)
@@ -33,10 +33,13 @@ setInterval(_updateTime, 1000)
 // //top time display
 let cityList = document.getElementById("selectCity").addEventListener("change",function _selectFunction(event){
     let selectCityName = event.target.value;
+    if (selectCityName === "current-Location"){
+        selectCityName = moment.tz.guess();
+    }    
     let simplifyCityName = selectCityName.replace("_", " ").split("/")[1];
     let cityTimeZoneName = moment().tz(selectCityName);
-    let selectTimeDisplay = document.getElementById("cityListContainer")
-    selectTimeDisplay.innerHTML = 
+    let selectTimeDisplay = document.getElementById("cityListContainer");
+    selectTimeDisplay.innerHTML += 
     `<div class="cityList">
         <div class="cityList-left">
             <p class="cityName">${simplifyCityName}</p>
