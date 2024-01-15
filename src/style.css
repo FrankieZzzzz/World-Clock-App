@@ -1,10 +1,17 @@
+html{
+    height: 100%;
+}
 body{
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     background: radial-gradient(circle at 10% 20%, rgba(216, 230, 241, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
     background-repeat:initial;
+    background-repeat: no-repeat;
 }
 /* Header area */
+/* .container{
+    background: radial-gradient(circle at 10% 20%, rgba(216, 230, 241, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+} */
 #mainContain{
     width: 50%;
     height: 100%;
@@ -13,6 +20,9 @@ body{
     border-radius: 22px;
     padding: 3% 0px;
 }
+/* .listContainer{
+    height: max-content;
+} */
 #pageTitle{
     font-size: 2em;
     text-align: center;
